@@ -6,15 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spaniel Boone portfolio page</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" media="screen and (max-width: 600px)" href="stylesSmallScreen.css">
 </head>
 
 <body>
   <div class="outer">
-    <header>
+    <header id="home">
       <div class="header-items">
         <h1>Spaniel Boone</h1>
         <span class="spaniel-icon"><img src="assets/spaniel-boone-1.png" alt=""></span>
       </div>
+
+      <!-- 'header-nav' div is for smaller screens only  -->
+      <nav class="header-nav">
+        <a href="#home">Home</a>
+        <a href="#research">Research</a>
+        <a href="#impact">Impact and action</a>
+        <a href="#apps">Applications</a>
+      </nav>  
+
     </header>
     <div class="inner">
       <nav class="sidebar-nav">
