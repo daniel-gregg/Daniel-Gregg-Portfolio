@@ -10,4 +10,4 @@ The layout is based on a desktop view with a sidebar navigation pane. The header
 
 In the content section there is a main 'about me' section with links to my main areas of work: research, impact and applications. These additional elements are located in a flexbox below the 'about me' section that is responsive to screen size. 
 
-For screens smaller than 600px a different style sheet was created that removes the sidebar and instead places the navigation links in a fixed header below the fading logo. 
+For screens smaller than 600px a different style sheet was created that removes the sidebar and instead places the navigation links in a fixed header below the fading logo.    
