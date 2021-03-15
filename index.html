@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spaniel Boone portfolio page</title>
+
+    <!-- Full-screen stylesheet for screens >600px -->
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Small-screen stylesheet for devices with <=600px -->
     <link rel="stylesheet" media="screen and (max-width: 600px)" href="stylesSmallScreen.css">
 </head>
 
@@ -13,6 +17,7 @@
   <div class="outer">
     <header id="home">
       <div class="header-items">
+        <!-- header items fade in and fade out over eachother -->
         <h1>Spaniel Boone</h1>
         <span class="spaniel-icon"><img src="assets/spaniel-boone-1.png" alt="spaniel boone logo depicted as a spaniel with a coonskin hat"></span>
       </div>
@@ -27,14 +32,18 @@
 
     </header>
     <div class="inner">
+      <!-- sidebar nav is for larger screens (>600px) only -->
       <nav class="sidebar-nav">
         <a href="#home">Home</a>
         <a href="#research">Research</a>
         <a href="#impact">Impact and action</a>
         <a href="#apps">Applications</a>
+
+        <!-- profile picture is shown only for larger screens -->
         <img src="assets/batman_small.jpg" alt="Me rafting on the Colorado River" id="profile-picture">
       </nav>
       <main class="container">
+        <!-- about me section spans the whole screen (minus sidebar nav if present) -->
         <div class="about-me">
           <h2>About Me</h2>
           <p>
@@ -50,6 +59,8 @@
               I seek to leverage ICT to improve the efficiency and scope of application of economic innovations for rural development and research. This includes applications of full-stack development to conduct online economic 'laboratory' experiments and, more recently, the conceptualisation of SaaS platforms to provide for digitisation and automation of supply chain procurement and payments.</br><a href="#apps">See more.</a>
           </p>
         </div> 
+
+        <!-- the flex container is targeted as a 3 column layout depicting each of the main areas of work -->
         <div class="flex-container">
           <div id="research">
             My <strong>economic research</strong> interests cover three main areas:</br></br>

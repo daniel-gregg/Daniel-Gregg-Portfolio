@@ -1,11 +1,12 @@
 :root {
     --sidePadding: 180px;
-    --halfPadding: 90px;
+    --halfPadding: 90px; /* this is to pad out elements by half of the sidebar width */
     --bodyColour:  rgb(208, 219, 230);
 }
 
 body {
     overflow-x: hidden;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .outer {
     width: 90%;
@@ -16,6 +17,7 @@ body {
 .inner {
     overflow: hidden;
 }
+
 header {
     background-color: cadetblue;
     height: 150px;
@@ -27,6 +29,7 @@ header {
     display:none;
 }
 
+/* This is for larger screens (>600px). not shown for smaller screens */
 .sidebar-nav {
     width: var(--sidePadding);
     background-color: var(--bodyColour);
@@ -37,6 +40,7 @@ header {
     text-align: center;
 }
 
+/* Fade in for header unit using keyframes animation */
 h1 {
     position: absolute;
     margin-top: 55px;
@@ -53,6 +57,7 @@ h1 {
     }
   }
 
+  /* Fade out for logo overlayed with header using keyframes animation */
 .spaniel-icon {
     position: absolute;
     width: 100%;
@@ -68,6 +73,7 @@ h1 {
     }
 }
 
+/* Float the content container up against the sidebar if present (and against left margin if not) */
 .container {
     margin-left: var(--sidePadding); 
     float:left;
@@ -80,6 +86,7 @@ h1 {
     text-decoration: none;
 }
 
+/* Flex container set as row-direction to contain the work elements */
 .flex-container {
     overflow: hidden;
     display: flex;
@@ -89,6 +96,7 @@ h1 {
     align-items: center;
 }
 
+/* Formatting for all elements in the flex container */
 .flex-container > * {
     flex-grow: 1;
     flex-basis: 300px;
@@ -99,7 +107,7 @@ h1 {
     background-color: rgb(188, 199, 209);
     text-align: center;
     box-shadow: -5px 5px 3px #888888;
-    min-height: 550px;
+    min-height: 600px;
 }
 
 .about-me {
