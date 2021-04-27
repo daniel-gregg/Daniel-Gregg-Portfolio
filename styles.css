@@ -1,0 +1,138 @@
+body {
+    width: 95%;
+    background-color: rgb(229, 231, 224);
+    margin: 0 auto;
+    height: 100%;
+}
+
+.header-items {
+    position: relative;
+    text-align: center;
+}
+
+/* Fade in for header unit using keyframes animation */
+#header-name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 160%;
+    animation: fadeIn ease 7s infinite;
+}
+
+@keyframes fadeIn {
+    50% {
+      opacity: 0;
+    }
+  }
+
+  /* Fade out for logo overlayed with header using keyframes animation */
+#icon {
+    width: 100%;
+    text-align: center;
+    animation: fadeOut ease 7s infinite;
+    opacity: 0;
+}
+
+@keyframes fadeOut {
+    50% {
+      opacity: 1;
+    }
+}
+
+.navlist {
+    position: relative;
+    list-style-type: none;
+    text-align:center;
+}
+
+.navlist li{
+    display: inline-block;
+    border: 2px dashed grey;
+    border-radius: 2px;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100px;
+}
+
+.flex-container{
+    margin: 0 auto; 
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.container {
+    margin: 0 auto;
+    text-align: center;
+    width: 350px;
+}
+
+h2{ 
+    text-align: center;
+    height:50px;
+    font-size: 140%;
+}
+
+svg,
+img {
+  max-width: 350px;
+  max-height: 350px;
+  vertical-align: middle;
+}
+
+.gallery {
+    display: grid;
+    grid-gap: 10px;
+    grid-auto-flow: column;
+    grid-auto-columns: calc(100% - 20px);
+    padding-left: 20px;
+    overflow: auto;
+    width: 100%;
+    scroll-snap-type: x mandatory;
+    margin: 0 auto;
+    height: 350px;
+  }
+  
+  .slide {
+    scroll-snap-align: center;
+    background-color: #f0f4f3;
+    height: 250px;
+  }
+  
+  .slide:focus {
+    outline: 0;
+  }
+  
+  .slide:focus-visible {
+    outline-offset: -1px;
+    outline: 1px solid var(--secondary-color);
+  }
+  
+  .slide:last-child {
+    position: relative;
+  }
+  
+  .slide:last-child::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 100%;
+    top: 0;
+  }
+  
+  .slide img {
+    mix-blend-mode: darken;
+  }
+
+  .footer{
+      margin-top: 50px;
+      width:100%;
+      height: 50px;
+      border-radius: 5px;
+      text-align: center;
+  }
+  
