@@ -1,8 +1,8 @@
 body {
     width: 95%;
-    background-color: rgb(229, 231, 224);
+    background-color: rgb(34, 46, 4);
     margin: 0 auto;
-    height: 100%;
+    color: lightgrey;
 }
 
 .header-items {
@@ -54,6 +54,27 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     width: 100px;
+    background-color:rgb(5, 51, 39) ;
+}
+
+.navlist li a {
+  color: inherit;
+}
+
+.about-me{
+    margin: 0 auto; 
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.item{
+    margin: 0 auto;
+    text-align: center;
+    width: 350px;
 }
 
 .flex-container{
@@ -73,15 +94,15 @@ body {
 
 h2{ 
     text-align: center;
-    height:50px;
     font-size: 140%;
 }
 
 svg,
 img {
-  max-width: 350px;
-  max-height: 350px;
+  max-width: 250px;
+  max-height:150px;
   vertical-align: middle;
+  object-fit: contain;
 }
 
 .gallery {
@@ -89,7 +110,6 @@ img {
     grid-gap: 10px;
     grid-auto-flow: column;
     grid-auto-columns: calc(100% - 20px);
-    padding-left: 20px;
     overflow: auto;
     width: 100%;
     scroll-snap-type: x mandatory;
@@ -128,11 +148,69 @@ img {
     mix-blend-mode: darken;
   }
 
-  .footer{
-      margin-top: 50px;
-      width:100%;
-      height: 50px;
-      border-radius: 5px;
-      text-align: center;
-  }
+.footer{
+    margin-top: 50px;
+    width:100%;
+    height: 50px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+  /* Gallery bit */
+  div.photoset {
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 2px;
+    background-color: #ffffff;
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .photo {
+       position: relative;
+       flex-grow: 1; //They will fill space but actually want to take up the smallest space possible doing it, so you just need to stop it getting too small with min-width (otherwise they all bunch on the same line)
+       min-width: calc(100% / 3); //This is the maximum number (3) in a row bit
+       background-size: cover;
+       background-position: center;
+       
+       @media screen and (max-width: 700px) {
+          min-width: calc(100% / 2); //As simple as this for responsiveness without a delay you would get with JavaScript
+       }
+       @media screen and (max-width: 460px) {
+          min-width: 100%;
+       }
+       &:after {
+          //Aspect Ratio
+          padding-top: 83.33333%; //For 5:6 height to width ratio
+          display: block;
+          content: "";
+       }
+       &:before {
+          //Gaps
+          z-index: 2;
+          position: absolute;
+          content: "";
+          top: 0px;
+          right: 0px;
+          bottom: 0px;
+          left: 0px;
+          box-shadow: inset 0 0 0 2px #ffffff; //Cheaty way to make it look like there are gaps 😜
+       }
+       &:nth-child(1) {
+          //Make first image big
+          width: 100%;
+       }
+    }
+ 
+    &.square .photo:after {
+       padding-top: 100%;
+    }
+    &.portrait .photo:after {
+       padding-top: 120%;
+    }
+ }
+
+
+
   
