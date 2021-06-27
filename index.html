@@ -1,116 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Daniel Gregg</title>
-  <link rel="stylesheet" href="styles.css">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="/css/style.css"> -->
 </head>
 
 <body>
-  <div class="header-items">
-    <div id="icon">
-      <span class="spaniel-icon"><img src="assets/spaniel-boone-1.png" alt="spaniel boone logo depicted as a spaniel with a coonskin hat"></span>
+
+  <div class="flex-column justify-space-around" id="home">
+    <header class="display-flex justify-space-between align-center p-2">
+      <nav class="bg-gray-800">
+        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+          <div class="relative flex items-center justify-between h-32">
+            <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+              <div class="hidden sm:block sm:ml-6">
+                <a href="/" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-4xl font-bold">Daniel Gregg</a> 
+              </div>  
+            </div>
+            <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+              <span class="spaniel-icon"><img src="assets/spaniel-boone-2.png" alt="spaniel boone logo depicted as a spaniel with a coonskin hat"></span>
+            </div>
+            <div class="flex space-x-4">
+              <a href="./assets/Gregg_CV.pdf" target="_blank" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-6 rounded-md text-l font-medium">CV</a>
+              <a href="https://www.linkedin.com/in/daniel-gregg-a21b5919a/" target="_blank" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-6 rounded-md text-l font-medium">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </div>
+
+<!-- Bio and introduction section -->
+
+<div class="flex justify-center">
+  <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 gap-5">
+      <p class="mt-4 max-w-4xl text-3xl font-bold text-gray-800 lg:mx-auto">
+          Professional profiles
+      </p>
+  </div>
+</div>
+
+<div class="flex justify-center">
+  <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-5">
+    <div class="max-w-l rounded overflow-hidden shadow-lg">
+      <img class="h-80 w-full object-scale-down" class="lazy" src="assets/DG_uganda.jpg" alt="people clipart">
+      <div class="px-6 py-4">
+        <div class="font-bold text-xl mb-2">Research in rural development/environmental economics</div>
+        <div class="font-bold text-m mb-2">Principal Economist, Econ-Lab</div>
+        <div class="font-bold text-m mb-2">Director, Intersection Traders</div>
+        <p class="text-gray-700 text-base">
+          I have over 15 years of experience as a specialist in innovations in microeconomic analysis of resource-sector issues. Specialising in rural/regional development issues I have initiated a range of supply chain re-organisation innovations to enable delivery of multiple economic, social and environmental objectives. I have worked across both research institutions in Australian and internationally and in the private sector focusing on the design and implementation of smallholder-inclusive supply chain innovations.
+        </p>
+      </div>
+      <a href="https://www.researchgate.net/profile/Daniel-Gregg" target="_blank">
+        <div class="px-6 pt-4 pb-2">
+          <span class="block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-center text-gray-700 mr-2 mb-2">Research Gate Profile</span>
+        </div>
+      </a>
     </div>
-    <div id="header-name">
-      <h1>Daniel Gregg</h1>
+    <div class="max-w-l rounded overflow-hidden shadow-lg">
+      <img class="h-80 w-full object-scale-down" class="lazy" src="assets/bitcoin_bubbler.png" alt="people clipart">
+      <div class="px-6 py-4">
+        <div class="font-bold text-xl mb-2">Full stack web-developer (MERN + Python)</div>
+        <div class="font-bold text-m mb-2">Technologies:</div>
+          <p class="text-gray-700 text-base">
+            <ul class="list-disc">
+              <li>Javascript, Node, Express, SQL</li>
+              <li>Tailwind, Bulma, Vanilla (CSS)</li>
+              <li>R, Python, Django</li>
+            </ul>
+          </p>
+        <div class="font-bold text-m mb-2 pt-2">Focus and expertise</div>
+        <p class="text-gray-700 text-s">
+          I have an interest in programming web-based applications that: 
+          <ul class="list-disc">
+            <li>Support rural households in developing countries to access higher value markets, improve savings, enhance financial empowerment and more</li>
+            <li>Support research in behavioural economics through lab and field experiments</li>
+          </ul>
+        </p>
+      </div>
+      <a href="https://github.com/daniel-gregg" target="_blank">
+        <div class="px-6 pt-4 pb-2">
+          <span class="block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-center text-gray-700 mr-2 mb-2">Github Repo</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+
+  <div class="flex justify-center">
+    <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-1 gap-5">
+        <p class="mt-4 max-w-4xl text-3xl font-bold text-gray-800 lg:mx-auto">
+            Developed applications:
+        </p>
     </div>
   </div>
 
-  <!-- navbar -->
-  <div id="navbar">
-    <nav class="sidebar-nav">
-      <ul class="navlist">
-        <li><a href="#research">CV</a></li>
-        <li><a href="#impact">Github</a></li>
-        <li><a href="#apps">LinkedIn</a></li>
-      </ul>
-    </nav>
-  </div>
-
-  <div class ="about-me">
-    <div class="item">
-      <h2>Research and Consulting:</h2><br>
-      I am a Senior Research Fellow in Economics at the University of New England (60% FTE) with a focus on rural development, production analysis, institutional design in ethical value chains and understanding the limits of human decision making in complex scenarios. I have supervised PhD students working on a range of topics including production analysis, rural development, food/nutritional analysis and more. Recent consulting work includes for the OECD (2018-19), World Bank (2020), Pew Charitable Trusts (2021) and the Australian Farm Institute (2021).  
-    </div>
-    <div class="item">
-      <h2>Impact:</h2><br> 
-      Linking research to impact is a core focus of my work. I am co-founder of an ethical coffee supply chain company that implements innovative contracting approaches to achieve high levels of inclusivity and value enhancements for smallholder coffee farmers in eastern Uganda. In addition, I am Associate Editor of the Australian Journal of Agricultural and Resource Economics (2019-current) and Principal of an economic consulting firm (econ-lab) with a focus on resource economics, rural development and food/agricultural systems. 
-      
-    </div>
-    <div class="item">
-      <h2>Apps and programming:</h2><br>
-      Using a combination of technologies I build full-stack systems that are focused on solving real-world problems. Examples of projects include: 
-      <ol>
-        <li>An automated supply chain disbursements and governance program (ADaPT)</li>
-        <li>An early-stage online experimental economics platform </li>
-        <li>A range of widgets developed showcasing a small range of web-development capabilities I can offer your project</li>
-      </ol>
-    </div>
-    
-  </div>
-
-  <!-- research section -->
-  <div class="flex-container">
-    <div class="container">
-      <div class="gallery">
-        <a href="#" class="slide">
-          <img height="250" src="https://i.imgur.com/Fh2EufJ.jpg" />
-        </a>
-        <a href="#" class="slide">
-          <img height="250" src="https://i.imgur.com/mVXIzYp.jpg" />
-        </a>
-        <a href="#" class="slide">
-          <img height="250" src="https://i.imgur.com/QFnOlv3.jpg" />
+  <div class="flex justify-center">
+    <div class="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-5">
+      <div class="max-w-sm rounded overflow-hidden shadow-lg">
+        <img class="h-80 w-full object-scale-down" class="lazy" src="assets/employees_clipart.png" alt="people clipart">
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2">Employee Management System</div>
+          <p class="text-gray-700 text-base">
+            A Node.js (console) employee management system 
+          </p>
+        </div>
+        <a href="https://github.com/daniel-gregg/Employee-manager-system" target="_blank">
+          <div class="px-6 pt-4 pb-2">
+            <span class="block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-center text-gray-700 mr-2 mb-2">Github Repo</span>
+          </div>
         </a>
       </div>
-    </div>
-  
-    <!-- impact section -->
-    <div class="container">
-      <div class="gallery">
-        <a href="#" class="slide">
-          <img height="250" src="https://i.imgur.com/Fh2EufJ.jpg" />
-        </a>
-        <a href="#" class="slide">
-          <img height="250" src="https://i.imgur.com/mVXIzYp.jpg" />
-        </a>
-        <a href="#" class="slide">
-          <img height="250" src="https://i.imgur.com/QFnOlv3.jpg" />
-        </a>
-      </div>
-    </div>
-  
-    <!-- programs and programming section -->
-    <div class="container">
-      <div class="gallery">
-        <a href="#" class="slide">
-          <img class="image" height="250" src="./assets/adapt black no background.png" />
-        </a>
-        <a href="#" class="slide">
-          <img class="image" height="250" src="./assets/econ_lab.png" />
-        </a>
-        <a href="#" class="slide">
-          <img class="image" height="250" src="https://i.imgur.com/QFnOlv3.jpg" />
+      <div class="max-w-sm rounded overflow-hidden shadow-lg">
+        <img class="h-80 w-full object-scale-down" class="lazy" src="assets/bitcoin_bubbler.png" alt="people clipart">
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2">Bitcoin Bubbler</div>
+          <p class="text-gray-700 text-base">
+            A bitcoin value charting, price evaluation, and currency converter tool
+          </p>
+        </div>
+        <a href="https://github.com/daniel-gregg/Bitcoin-Bubbler" target="_blank">
+          <div class="px-6 pt-4 pb-2">
+            <span class="block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-center text-gray-700 mr-2 mb-2">Github Repo</span>
+          </div>
         </a>
       </div>
+      <div class="max-w-sm rounded overflow-hidden shadow-lg">
+        <img class="h-80 w-full object-scale-down" class="lazy" src="assets/profile_card.png" alt="people clipart">
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2">Team Profile Generator</div>
+          <p class="text-gray-700 text-base">
+            A simple web-based 'team page' and team profile generator
+          </p>
+        </div>
+        <a href="https://github.com/daniel-gregg/Team-profile-generator" target="_blank">
+          <div class="px-6 pt-4 pb-2">
+            <span class="block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-center text-gray-700 mr-2 mb-2">Github Repo</span>
+          </div>
+        </a>
       </div>
     </div>
   </div>
-
-  <div class="photoset -square"> <!--Can also do portrait or square, remove the "-" prefix-->
-    <!--Add or remove some of these-->
-    <a href="https://blog.tumblr.com/image/0000000000" target="_blank" class="photo" style="background-image:url(https://78.media.tumblr.com/343322f00cf3a6b7a4f460cbc766aa1c/tumblr_p773r1ugkd1wd32uro1_1280.jpg)" ></a>
-    <a href="https://blog.tumblr.com/image/0000000000" target="_blank" class="photo" style="background-image:url(https://78.media.tumblr.com/a8158f5113ac52008eb3fe86bc87eadd/tumblr_p773r1ugkd1wd32uro2_400.jpg)"></a>
-    <a href="https://blog.tumblr.com/image/0000000000" target="_blank" class="photo" style="background-image:url(https://78.media.tumblr.com/5091ebebffe12dd2b7b6e510ccfd141e/tumblr_p773r1ugkd1wd32uro3_400.jpg)"></a>
-    <a href="https://blog.tumblr.com/image/0000000000" target="_blank" class="photo" style="background-image:url(https://78.media.tumblr.com/7e95258e791956cfb963f99748084064/tumblr_p773r1ugkd1wd32uro4_400.jpg)"></a>
-    <a href="https://blog.tumblr.com/image/0000000000" target="_blank" class="photo" style="background-image:url(https://78.media.tumblr.com/81caa127eb8502865c3f4fb9cc710de7/tumblr_p773r1ugkd1wd32uro5_400.jpg)"></a>
-    <a href="https://blog.tumblr.com/image/0000000000" target="_blank" class="photo" style="background-image:url(https://78.media.tumblr.com/c62c2379b7fc2c16b0bc3c9efcc915ac/tumblr_p773r1ugkd1wd32uro6_400.jpg)"></a>
-    <a href="https://blog.tumblr.com/image/0000000000" target="_blank" class="photo" style="background-image:url(https://78.media.tumblr.com/ea9fe77f480a5328eb81335847cb711f/tumblr_p773r1ugkd1wd32uro7_400.jpg)"></a>
-    <a href="https://blog.tumblr.com/image/0000000000" target="_blank" class="photo" style="background-image:url(https://78.media.tumblr.com/470e6d187709ee3ecd0b1c71a287adc6/tumblr_p773r1ugkd1wd32uro8_400.png)"></a>
-    <a href="https://blog.tumblr.com/image/0000000000" target="_blank" class="photo" style="background-image:url(https://78.media.tumblr.com/b5f5d5705000bf45b6f8903222bcba8d/tumblr_p773r1ugkd1wd32uro9_400.jpg)"></a>
- </div>
 
   <!-- Footer -->
   <div class="footer">
@@ -118,3 +155,11 @@
   </div>
 </body>
 </html>
+
+<script src="https://kit.fontawesome.com/8fc91875bd.js" crossorigin="anonymous"></script>
+
+
+
+  
+ 
+
